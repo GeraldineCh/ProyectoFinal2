@@ -8,3 +8,14 @@ var coders = [ { nombre : "Meche", apellido : "Zubieta",  promocion : "1era. pro
 			 { nombre : "Diana", apellido : "Navarro",  promocion : "5ta. promoción", estado : "Trabajando" } ];
 
 
+var resultado = "";
+
+function printAll() {
+	for (var individuo in coders)
+	{resultado += "Nombre: " +coders[individuo].nombre+"<br>"+
+			"Apellido: " +coders[individuo].apellido+"<br>"+
+			"Promoción: " +coders[individuo].promocion+"<br>"+
+			"Estado: " +coders[individuo].estado+"<br><br>";}
+
+document.getElementById('print').innerHTML = resultado;
+}
