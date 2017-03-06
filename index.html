@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Capitan 0.0.1</title>
+	<link rel="stylesheet" type="text/css" href="css/botones.css"/>
 </head>
 <body>
 
@@ -16,13 +17,25 @@
 </div>
 <div>
 	<p><b><b>Temas</p>
-	<button id="sprint1" type="button">Sprint 1</button>
-	<button id="sprint2" type="button">Sprint 2</button>
-	<button id="sprint3" type="button">Sprint 3</button>
+	<button id="sprint1" type="button" onclick="inout('text1')">Sprint 1</button>
+	<button id="sprint2" type="button" onclick="inout('text2')">Sprint 2</button>
+	<button id="sprint3" type="button" onclick="inout('text3')">Sprint 3</button>
 </div>
 
-<div id="salida-sprint"></div>
+<div id="text1">Primer sprint
 <hr>
-<div id="quiz-sprint"></div>
+Primer quiz
+</div>
+
+<div id="text2">Segundo sprint
+<hr>
+Segundo quiz
+</div>
+
+<div id="text3">Tercer sprint
+<hr>
+Tercer quiz
+</div>
+<script src="js/botones.js" type="text/javascript"></script>
 </body>
 </html>
